@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday San Htar Yin!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fffce1, #fff1a8);
+      background-image: url('https://www.transparenttextures.com/patterns/flower.png');
+      background-size: contain;
+      color: #3e2c14;
+    }
+    nav {
+      background: #fff7c2;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      color: #c17d00;
+    }
+    .page {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .page.active {
+      display: block;
+    }
+    h1, h2 {
+      color: #ffb400;
+      text-shadow: 1px 1px #fff7d1;
+    }
+    .sunflower-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .sunflower {
+      width: 100px;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .card {
+      background: #fffef4;
+      margin: 10px auto;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 200, 0, 0.2);
+    }
+    .signature {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ffa500;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('gallery')">Gallery</a>
+    <a href="#" onclick="showPage('fun')">Fun Facts</a>
+    <a href="#" onclick="showPage('wishes')">Wish Wall</a>
+  </nav>  <div id="home" class="page active">
+    <h1>Happy Birthday San Htar Yin!</h1>
+    <div class="card">
+      <p>Wishing you the brightest and happiest birthday! May your year be full of sunshine, laughter, and good vibes—just like a sunflower facing the sun.</p>
+      <p>Get a boyfriend soon, okay? I’m handling your attitude like a pro, but even I have my limits!</p>
+      <p>Thanks for being the chaotic sunshine in my life. Enjoy your special day, friend!</p>
+      <div class="signature">With love, Francis</div>
+    </div>
+    <div class="sunflower-row">
+      <img src="https://cdn.pixabay.com/photo/2017/02/01/10/48/sunflowers-2028741_1280.png" class="sunflower">
+      <img src="https://cdn.pixabay.com/photo/2021/07/27/09/20/sunflower-6496909_1280.png" class="sunflower">
+      <img src="https://cdn.pixabay.com/photo/2014/12/21/23/58/sunflower-576848_1280.png" class="sunflower">
+    </div>
+  </div>  <div id="gallery" class="page">
+    <h2>Sunflower Gallery</h2>
+    <div class="sunflower-row">
+      <img src="https://cdn.pixabay.com/photo/2016/04/01/10/36/sunflower-1304510_1280.png" class="sunflower">
+      <img src="https://cdn.pixabay.com/photo/2014/04/10/11/02/sunflower-320379_1280.png" class="sunflower">
+      <img src="https://cdn.pixabay.com/photo/2016/03/27/20/58/sunflower-1289723_1280.png" class="sunflower">
+    </div>
+    <p>Each one blooming just like your smile today!</p>
+  </div>  <div id="fun" class="page">
+    <h2>Fun Facts About San Htar Yin</h2>
+    <div class="card">
+      <p>1. Professional attitude distributor—keep calm and run.</p>
+      <p>2. Can finish a whole bag of chips and still deny it.</p>
+      <p>3. Brightens rooms like a sunflower… after coffee.</p>
+      <p>4. Too cool to care but always cares.</p>
+    </div>
+  </div>  <div id="wishes" class="page">
+    <h2>Wish Wall</h2>
+    <div class="card">
+      <p>Leave your birthday wishes here (mentally, or with a pen and sticky note on your screen—go wild).</p>
+      <p>You deserve the world, but this cute little site will do for now!</p>
+    </div>
+  </div>  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script></body>
+</html>
